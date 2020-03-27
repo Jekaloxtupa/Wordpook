@@ -1,3 +1,6 @@
+from vkbottle import Bot, Message
+import time
+
 @bot.on.message_handler(text='/скорость', lower=True)
 async def speed_ans(ans: Message):
     timer = time.time()
