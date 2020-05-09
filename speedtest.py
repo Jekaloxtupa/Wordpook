@@ -1,7 +1,7 @@
 from vkbottle import Bot, Message
 import time
 
-@bot.on.message_handler(text='you command', lower=True)
+@bot.on.message_handler(text='command', lower=True)
 async def speed_ans(ans: Message):
     timer = time.time()
     await ans('start')
